@@ -2,6 +2,7 @@ package com.example.task53;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void clicked(View view) {
         counterClick +=1;
+        tv.setTextColor(Color.YELLOW);
         if (counterClick != 6)
             tv.setText("This is a click number:" + counterClick);
         else {
